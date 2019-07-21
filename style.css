@@ -1,33 +1,167 @@
 *
-{
-	margin: 0;
-	padding: 0;
-	
+.fullscreen {
+	margin:0;
+	padding:0;
+	/* height:100%; */
+	width: 100%;
+	position: fixed;
+	font-family: 'Courier New';
 }
 
-header
-{
+.top{
+	top: 0;
+	border-bottom: 3px solid black;
+	height: 15%;	
+}
+
+.freezetop{
+	top: 0;
+	height: 15%;	
+}
+
+.bottom{
+	bottom: 0;
+	height: 85%;
+	overflow-y: scroll;
+}
+
+.bottomright{
+	height: 85%;
+	right: 0;
+	vertical-align: center;
+	width: 50%;
+	position: fixed;
+    background-image: url(/images/homeimage.jpg);
+	background-repeat: no-repeat;
 	background-position: center;
+	background-size: contain;
 }
 
-.main-nav
-{
+.bottomleft{
+	height: 85%;
+	left: 0;
+	vertical-align: center;
+	width: 50%;
+	position: fixed;
+	padding: 15px;
+}
+
+.topright{
+	height: 15%;
+	right: 0;
+	vertical-align:right;
+	width: 50%;
+	position: fixed;
+	padding: 5px;
+	margin-top: 20px;
+}
+
+.topleft{
+	left: 0;
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 20px;
+	vertical-align: left;
+	height: 50%;
+	height: 15%;
+	vertical-align: left;
+	position: fixed;
+}
+
+.menu{
 	float: right;
-	list-style: none;
-	margin-top: 30px;
-	
 }
 
-.main-nav li
-{
-	display: inline-block;
+#menulist{
+	list-style-type: none;
+	padding: 10px;
+	float: left;
+	text-decoration: none;	
 }
 
-.main-nav li a
-{
-	color: white;
+a{
+	color: black;
+	text-align: right;
+	padding: 5px 5px;
 	text-decoration: none;
-	padding: 5px 20px;
-	font-family: "Roboto", "sans-serif;
-	font-size: 15px;
+	/* line-height: 40px; */
 }
+
+.blurb{
+	color: black;
+	font-size: 15px;
+	padding: 25px;
+	line-height: 35px;
+	font-kerning: normal;
+}
+
+h1{
+	color: blue;
+	font-size: 50px;
+	padding: 20px;
+	font-weight: normal;
+}
+
+h3{
+	color: black;
+	font-size: 40px;
+	text-align: center;
+	font-weight: normal;
+	font-family: 'Courier New';
+}
+
+#mylinks{
+	text-decoration: underline;
+	color: blue;
+}
+
+#projectlist{
+	color: black;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Courier New';
+	margin:auto;		
+}
+
+#sublist{
+	color: black;
+	font-size: 20px;
+	text-align: left;
+	margin:auto;		
+}
+
+.projectlist{
+	margin:auto;
+	line-height: 40px;
+}
+
+#sub{
+	font-size: 12px;
+}
+
+h4{
+	font-size: 20px;
+	padding: 30px;
+}
+
+.headertext{
+	color: black;
+	font-size: 15px;
+	padding: 25px;
+	line-height: 20px;
+	font-kerning: normal;
+	text-align: center;
+}
+
+.bodytext{
+	color: black;
+	font-size: 13px;
+	padding: 20px;
+	line-height: 2;
+	font-kerning: normal;
+	text-align: left;
+}
+
+
+
+
