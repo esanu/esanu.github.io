@@ -44,6 +44,7 @@
 	width: 50%;
 	position: fixed;
 	padding: 15px;
+	overflow-y: scroll;
 }
 
 .topright{
