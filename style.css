@@ -163,6 +163,12 @@ h4{
 	text-align: left;
 }
 
+.sidebysideimage{
+	float: left;
+	width: 50%;
+	padding: 10px;
+}
+
 
 
 
