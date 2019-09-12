@@ -32,7 +32,7 @@
         </div>
 
         <div class="topleft">
-            <h2>SAYO SANU</h2>
+            <h2><a href = "../index.html">SAYO SANU</a></h2>
         </div>
 
     </div>
@@ -73,7 +73,7 @@
 
                 
 
-                Python code analysis found <a id="mylinks" href="../files/jumpman23.ipynb">here</a>. Data found <a id="mylinks" href="/webpages//jumpman/analyze_me.csv">here</a>. Slides found <a id="mylinks" href="../files/MarketAnalysis.pdf">here</a>. <br> <br>
+                Python code analysis found <a id="mylinks" href="../files/marketanalysis/delivex.ipynb">here</a>. Data found <a id="mylinks" href="../files/marketanalysis/analyze_me.csv">here</a>. Slides found <a id="mylinks" href="../files/marketanalysis/MarketAnalysis.pdf">here</a>. <br> <br>
             </p>
             <p class="headertext">
                 <b>Revenue & Growth </b> <br><br>
@@ -90,7 +90,7 @@
 
 
                 There was an upward trend in the number of deliveries made each week for this month. Deliveries increased by xx% week-over-week. <br><br>
-                <img src="../images/01growthindeliveries.png" alt="Oops! I can't find this image right now" height="300" width="450"><br>
+                <img src="../images/01growthindeliveries.png" alt="Oops! I can't find this image right now" height="250" width="400"><br>
                 *Data for entire 43rd week not provided.
 
                 <!-- Avereage cost of a delivery -->
@@ -106,7 +106,7 @@
                 <b>What are the most popular delivery areas?</b><br>
                 <!-- Insert top 10 delivery and pickup -->
                 
-                Data for delivery pick-up location (where available) and delivery drop-off location is available. Heat maps for the delivery pick-up and drop-off locations are found <a id="mylinks" href="/webpages/jumpman/pickup_locaion_deliveries.html">here</a> and <a id="mylinks" href="/webpages/jumpman/dropoff_location_deliveries.html">here</a> for further drill down. <br><br>
+                Data for delivery pick-up location (where available) and delivery drop-off location is available. Heat maps for the delivery pick-up and drop-off locations are found <a id="mylinks" href="../files/marketanalysis/pickup_locaion_deliveries.html">here</a> and <a id="mylinks" href="../files/marketanalysis/pickup_locaion_deliveries.html">here</a> for further drill down. <br><br>
                 
                 Drop-off Location Heatmap &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 Pick-up Location Heatmap<br>
@@ -140,7 +140,7 @@
                 <img src="/images/01deliverytimebyveh.png" height="300" width="600">
 
                 <br><br>
-                On average, deliveries are made 20% faster than on bicycles than on cars. 
+                On average, deliveries are made 20% faster on bicycles than in cars. 
 
                 <table>
                     <tr>
@@ -175,6 +175,44 @@
 
             <p class="headertext">
                 <b>Technology</b> <br>
+            </p>
+
+            <p class="bodytext">
+                From the data provided, about 83% of orders* took 10 minutes or less to be completed. <br>
+                <img src="../images/01timetoorder.png" alt="Oops, I can't find this image right now" height="300" width="400">
+                <br>
+                *Data for time taken to complete the order is missing for about 50% of deliveries. Analysis is on 2500+ deliveries, which is a significant sample. <br><br>
+
+
+                Some data quality and integrity issues were identified during analysis. <br>
+
+                • 32 duplicate records found in data provided <br>
+                • There is no primary key (unique) to identify records. When multiple items are ordered in a single delivery, the delivery data is recorded for each item using the same delivery ID. <br>
+                • Up to 50% records have some missing values. From initial analysis, some data is missing by design. For example, when the order requests for inventory on hand, data for 'when_the_dpartner_arrived_at_pickup' and 'when_the_dpartner_left_pickup' is unavailable. The missing data may also skew analysis. <br>
+                • There are some data inconsistencies in file provided For example, data recorded for item categories include, “A la Cart” and “A la Carte”, “Appetizer” and “Appetizers”
+            </p>
+
+            <p class="headertext">
+                <b>Recoomendations from Analysis</b>
+            </p>
+
+            <p class="bodytext">
+                <b>Revenue & Growth:</b><br>
+                • Cluster & cohort analysis to better understand customers and behavior <br>
+                • Model customer behavior/journey to understand customer funnel, churn & retention <br>
+                • Integrate on-demand delivery data with external data sources  e.g. NY demographic data, real estate prices, and so on, to gain for further insights <br><br>
+
+                <b>Operations:</b><br>
+                • Provide incentives for delivery-partners delivering with optimal vehicle type. (Statistically significant efficiencies from the cost of delivery, time to deliver, etc.). Incentives could be financial (e.g bonuses) or non-financial (e.g. badges, or points earned on delivery leaderboard) <br> 
+                • Further analysis into customer on-demand ordering behaviour. For example, why are there more deliveries on Sunday? <br>
+                • Cleanse data and conduct analysis on favorite places and frequently order items. Delivery partners can stock up on these items or Delivex can enter into partnerships with customer's favorite places. <br><br>
+
+                <b>Technology:</b><br>
+                • Discuss with product & engineering teams about application and database design to understand trade off between user friction and collecting data. <br>
+                • Work with operations to standardize the process for collecting data and ensuring data quality. For example, new process could ensure that the delivery partners are entering their receipts to reduce missing values and data inconsistencies <br>
+                • Validate data format and database constraints
+
+
             </p>
     
            
