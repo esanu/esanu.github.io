@@ -71,7 +71,42 @@
                     For this project, the visualization phase was out of scope. We researched and identified potential solutions that met client requirements for all in-scope phases (ingestion, storage and transformation). The architectural design options were evaluated using a scorecard for a final recommendation before tools and vendors were selected.
                     <br>
                     <br>
-                    Please see <a id="mylinks" href="../files/capstoneposter.pdf">capstone poster </a> for more details on this project. 
+                    <b></b>
+                    After research, the team proposed 3 architectural options optimized for different strengths. <br>
+                    <b>Option 1:</b> This architectural design was proposed as a light-weight technology stack. <br>
+                    Data is extracted from source systems using traditional batch ETL solutions. The data is loaded into a cold storage data lake for adhoc queries and basic data analysis. From the data lake, the data is stored in a downstream datawarehouse for a 30-day period. Subsets of the transactional data are then stored in data marts for easier and faster access on the dashboard. Pre-defined rules are applied before analytics data is displayed on the dashboard. <br><br>
+                    The downside of this design is degraded performance in providing "near real-time" analytics because of the number of components. Also, there is an impact on solution reliability and fault-tolerance using traditional batch ETL process.  <br>
+                    <img src="../images/02peridot.png" alt="Oops, I can't find this image right now" height="350" width="700"> <br><br>
+
+                    <b>Option 2:</b>Our second recommendation provides ... <br>
+
+                    <img src="../images/02amethyst.png" alt="Oops, I can't find this image right now" height="350" width="700">
+                    <br>
+
+                    <br><br>
+
+                    <b>Option 3:</b>Our final recommendation provides ... <br>
+
+                    <img src="../images/02andesine.png" alt="Oops, I can't find this image right now" height="350" width="700">
+                    <br>
+
+                    <br><br>
+
+                    Following these proposals, we evaluated each architectural option against our client's key requirements using a weighted scorecard. <br>
+
+                    <img src="../images/02scorecard.png" alt="Oops, I can't find this image right now" height="350" width="500">
+                    <br>
+                    <br>
+
+                    <img src="../images/02scoreboard.png" alt="Oops, I can't find this image right now" height="250" width="600">
+                    <br>
+
+                    <img src="../images/02andesinetools.png" alt="Oops, I can't find this image right now" height="350" width="700">
+                    <br>
+                    <br>
+                    
+                    
+                    Please see <a id="mylinks" href="../files/capstoneposter.pdf">capstone poster</a> for more details on this project. 
 
 
                 </p>
