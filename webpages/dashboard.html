@@ -73,32 +73,45 @@
                     <br>
                     <b></b>
                     After research, the team proposed 3 architectural options optimized for different strengths. <br>
-                    <b>Option 1:</b> This architectural design was proposed as a light-weight technology stack. <br>
+                    <b>Peridot:</b> This architectural design was proposed as a light-weight technology stack. <br>
                     Data is extracted from source systems using traditional batch ETL solutions. The data is loaded into a cold storage data lake for adhoc queries and basic data analysis. From the data lake, the data is stored in a downstream datawarehouse for a 30-day period. Subsets of the transactional data are then stored in data marts for easier and faster access on the dashboard. Pre-defined rules are applied before analytics data is displayed on the dashboard. <br><br>
                     The downside of this design is degraded performance in providing "near real-time" analytics because of the number of components. Also, there is an impact on solution reliability and fault-tolerance using traditional batch ETL process.  <br>
                     <img src="../images/02peridot.png" alt="Oops, I can't find this image right now" height="350" width="700"> <br><br>
 
-                    <b>Option 2:</b>Our second recommendation provides ... <br>
+                    <b>Amethyst:</b> Our second recommendation uses a messaging queue to ingest data from the source systems. Messaging systems allow for asynchronous communication, decoupling systems and improving fault-tolerance. The data is transformed using a stream processing application that can process continuous data input. All data is stored in a data lake for adhoc queries, advanced analytics and predictive modeling. Some stream processing applications provide advanced modeling. Data is stored in datawarehouses for a shorter period for historical analysis. Subsets of the transactional data are then stored in data marts for easier and faster access on the dashboard. Pre-defined rules are applied before analytics data is displayed on the dashboard. <br><br>  <br>
 
                     <img src="../images/02amethyst.png" alt="Oops, I can't find this image right now" height="350" width="700">
                     <br>
 
                     <br><br>
 
-                    <b>Option 3:</b>Our final recommendation provides ... <br>
+                    <b>Andensine:</b> Our final recommendation also uses a messaging queue to ingest data from the source systems. The data is also transformed using a stream processing application that can process continuous data input. The stream application is integrated with the analytics dashboard as a downstream system. All data is stored in a cold storage data lake for adhoc queries, advanced analytics and predictive modeling, and more recent historical data is available in variety of databases (NoSQL, SQL, etc.) for quicker analysis. <br>
 
                     <img src="../images/02andesine.png" alt="Oops, I can't find this image right now" height="350" width="700">
                     <br>
 
                     <br><br>
 
-                    Following these proposals, we evaluated each architectural option against our client's key requirements using a weighted scorecard. <br>
+            
+
+                    Following these proposals, we evaluated each architectural option against our client's key requirements using a weighted scorecard. <br> <br>
 
                     <img src="../images/02scorecard.png" alt="Oops, I can't find this image right now" height="350" width="500">
                     <br>
-                    <br>
+                    We scored each architectural option based on our knowledge of information systems, our research, and counsel from esteemed client and advisors. <br>
 
                     <img src="../images/02scoreboard.png" alt="Oops, I can't find this image right now" height="250" width="600">
+                    <br>
+                    Andensine and Amethyst options with messaging queues and streaming applications scored hire on scalability and flexibility, which was a key requirements. Our client wanted to keep the solution flexible for changing business needs. Business changes may come with a growth in data volume and processing requirements. Also, messaging systems provide transparency (our source system will not need to be concerned about the location/address of the source system) and can ingest variety data formats (structured and unstructured). 
+                    <br>
+                    <br>
+                    These options both scored low on total cost of ownership. We conducted a cost-analysis based on our best estimates of products available on Microsoft Azure's platform. 
+
+                    <br>
+                    <br>
+
+                    Adensine architecture was our final recommendation to enable real-time insights on the health and performance of critical systems in a retail and e-commerce organization. <br>
+                    Andensine's architecture and components allow our client to grow and take advantage advanced technology strategies. <br>
                     <br>
 
                     <img src="../images/02andesinetools.png" alt="Oops, I can't find this image right now" height="350" width="700">
